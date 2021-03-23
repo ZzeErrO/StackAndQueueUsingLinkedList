@@ -41,6 +41,15 @@ namespace StackAndQueue
                 Console.Write(temp.data + " ");
                 temp = temp.next;
             }
+            Console.WriteLine();
+        }
+
+        internal Node Dequeue()
+        {
+            if (head == null)
+                return null;
+            head = head.next;
+            return head;
         }
 
     }
